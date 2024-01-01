@@ -2,3 +2,4 @@
 /venv
 /dist
 *.zip
+**/__pycache__/*

@@ -1,7 +1,8 @@
 1. 프로젝트 디렉터리에 가상 환경을 생성
 python -m venv venv
 
-2. .\venv\Scripts\activate
+.\venv\Scripts\activate
+
 (
   Unauthorized Access 에러발생 -> powershell 관리권한 실행 ->
   Set-ExecutionPolicy Unrestricted
@@ -13,7 +14,4 @@ python -m venv venv
 pyside6-uic form.ui -o output.py
 
 5. 하나의 exe파일로 만들기
-pyinstaller --onefile --icon=logo.ico --add-data "logo.ico;." .\AliExpressAuto.py
-
-
-
+pyinstaller --clean --onefile --noconsole --windowed --name "카카오 자동 메세지" --icon=mango.ico --add-data "mango.ico;." .\Main.py
